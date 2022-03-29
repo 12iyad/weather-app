@@ -1,3 +1,34 @@
+# `weather app group 18`
+
+This app is a weather app for people in London which makes clothes suggestions based on the current weather.
+
+You can start the app by running **"npm start"** in the project directory. 
+
+---
+
+## `Contributors:`
+Larbi Belkhit, Riyad Hussain, Tracey Bui, Balint Bordacs
+Group 18
+
+---
+
+### `Dependancies:`
+axios: 0.26.0
+https://github.com/axios/axios/releases
+
+
+react: 17.0.2
+react-dom: 17.0.2
+react-scripts: 5.0.0
+web-vitals: 2.1.4
+(https://github.com/facebook/create-react-app)
+
+
+node: 16.14.0
+https://nodejs.org/en/download/
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
