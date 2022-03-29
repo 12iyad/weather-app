@@ -1,23 +1,17 @@
-// import 'promise-polyfill';
-// import 'isomorphic-fetch';
-import { h, render } from 'preact';
-import './style';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-let root;
-function init() {
-	let App = require('./components/app').default;
-	root = render(<App />, document.body, root);
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-// register ServiceWorker via OfflinePlugin, for prod only:
-if (process.env.NODE_ENV==='production') {
-	require('./pwa');
-}
-
-// in development, set up HMR:
-if (module.hot) {
-	//require('preact/devtools');   // turn this on if you want to enable React DevTools!
-	module.hot.accept('./components/app', () => requestAnimationFrame(init) );
-}
-
-init();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

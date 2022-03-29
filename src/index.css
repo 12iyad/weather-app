@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Merriweather:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: system-ui;
+  content: '';
+  background-image: url('./assets/background/Clear.jpg');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-weight: lighter;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  }
+
+.app .top {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.top {
+  margin: 1rem auto;
+  padding-bottom: 0%;
+  text-align: center;
+  color: rgb(51,71,84);
+  font-weight: lighter;
+}
+
+.location {
+  font-size: 2rem;
+}
+.temp {
+  font-size: 8rem;
+}
+.degree {
+  font-size: 5rem;
+  vertical-align: top;
+  text-align: left;
+  
+}
+.tempdescription {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.feels {
+  font-size: 1.2rem;
+}
+
+.middle {
+  display: flex;
+}
+
+.sunrise, .sunset {
+  border-radius: 50%;
+  width: 6.7rem;
+  height: 6.7rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: rgba(42,42,42,0.5);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sunrise-img, .sunset-img {
+  width: 3rem;
+}
+
+.clothes-recommender {
+border-radius: 1rem;
+color: white;
+text-align: center;
+vertical-align: middle;
+padding: 1rem 1rem;
+margin-top: auto;
+margin-left: auto;
+background-color: rgba(42,42,42,0.5);
+font-size: 1.2rem;
+margin-right: 0.5rem;
+}
+
+.hourly-forecast {
+  padding-left: 1rem;
+}
+
+.hourly {
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 1rem;
+  background-color: rgba(42,42,42,0.5);
+  color: white;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+}
+
+.forecastTable td {
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid rgb(255,255,255, 0.5);
+  border-width: 10%;
+  vertical-align: top;
+}
+
+.empty-rain, .full-rain {
+  vertical-align: top;
+  width: 1rem;
+}
+
+.forecastTable {
+  background-color: rgba(42,42,42,0.5);
+  color: white;
+  padding: 2%;
+  width: 92%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+
+.date{
+text-align: left;
+}
+.rain {
+text-align: center;
+}
+.min-max {
+text-align: right;
+}
+
+.bottom {
+  padding-bottom: 1rem;
+}
+
+.extraTable {
+  width: 92%;
+  margin: 0 auto;
+  background: rgba(42, 42, 42, 0.5);
+  border-radius: 1rem;
+  padding: 2% 2%;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.extraTable td {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid rgb(255,255,255, 0.5);
+  border-width: 10%;
+}
+
+.wind, .humidity, .uv{
+  text-align: right;
+}
